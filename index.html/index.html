@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+</head>
+
+<body background="../assets/images/map2.jpg">
+    <div id="container">
+        <div id="gameDiv">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Let's Play Trivia!</h1>
+                    <h2>How Well Do You Know The State Capitals?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-danger" id="startBtn">Start</button>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <div id="hidden">
+                <h1>It's Trivia Time!</h1>
+                <div id="clock"></div>
+                <form id="trivia">
+                    <p id="first">What is the capital of Wyoming?</p>
+                    <input type="radio" name="Q1" value="incorrect">Augusta
+                    <input type="radio" name="Q1" value="incorrect">Lansing
+                    <input type="radio" name="Q1" value="incorrect">Helena
+                    <input type="radio" name="Q1" value="correct" id="right">Cheyenne
+                    <br>
+                    <br>
+                    <p id="second">What is the capital of Michigan?</p>
+                    <input type="radio" name="Q2" value="incorrect">Raleigh
+                    <input type="radio" name="Q2" value="correct" id="right">Lansing
+                    <input type="radio" name="Q2" value="incorrect">Madison
+                    <input type="radio" name="Q2" value="incorrect">Dover
+                    <br>
+                    <br>
+                    <p>What is the capital of Utah?</p>
+                    <input type="radio" name="Q3" value="incorrect">Annapolis
+                    <input type="radio" name="Q3" value="incorrect">Topeka
+                    <input type="radio" name="Q3" value="incorrect">Hartford
+                    <input type="radio" name="Q3" value="correct" id="right">Salt Lake City
+                    <br>
+                    <br>
+                    <p>What is the capital of New Mexico?</p>
+                    <input type="radio" name="Q4" value="incorrect">Frankfort
+                    <input type="radio" name="Q4" value="incorrect">Juneau
+                    <input type="radio" name="Q4" value="incorrect">Albany
+                    <input type="radio" name="Q4" value="correct" id="right">Santa Fe
+                    <br>
+                    <br>
+                    <p>What is the capital of South Dakota?</p>
+                    <input type="radio" name="Q5" value="incorrect">Richmond
+                    <input type="radio" name="Q5" value="incorrect">Springfield
+                    <input type="radio" name="Q5" value="correct" id="right">Pierre
+                    <input type="radio" name="Q5" value="incorrect">Columbus
+                    <br>
+                    <br>
+                    <p>What is the capital of New Hampshire?</p>
+                    <input type="radio" name="Q6" value="incorrect">Bismark
+                    <input type="radio" name="Q6" value="correct" id="right">Concord
+                    <input type="radio" name="Q6" value="incorrect">Carson City
+                    <input type="radio" name="Q6" value="incorrect">Phoenix
+                    <br>
+                    <br>
+                    <p>What is the capital of Vermont?</p>
+                    <input type="radio" name="Q7" value="incorrect">Baton Rouge
+                    <input type="radio" name="Q7" value="incorrect">St. Paul
+                    <input type="radio" name="Q7" value="incorrect">Jackson
+                    <input type="radio" name="Q7" value="correct" id="right">Montpelier
+                    <br>
+                    <br>
+                    <p>What is the capital of Missouri?</p>
+                    <input type="radio" name="Q8" value="incorrect">Augusta
+                    <input type="radio" name="Q8" value="correct" id="right">Jefferson City
+                    <input type="radio" name="Q8" value="incorrect">Columbia
+                    <input type="radio" name="Q8" value="incorrect">Charleston
+                    <br>
+                    <br>
+                    <p>What is the capital of Montana?</p>
+                    <input type="radio" name="Q9" value="incorrect">Tallahassee
+                    <input type="radio" name="Q9" value="correct" id="right">Helena
+                    <input type="radio" name="Q9" value="incorrect">Little Rock
+                    <input type="radio" name="Q9" value="incorrect">Des Moines
+                    <br>
+                    <br>
+                    <p>What is the capital of Georgia?</p>
+                    <input type="radio" name="Q10" value="incorrect">Lincoln
+                    <input type="radio" name="Q10" value="incorrect">Helena
+                    <input type="radio" name="Q10" value="incorrect">Salem
+                    <input type="radio" name="Q10" value="correct" id="right">Atlanta
+                </form>
+            </div>
+            <div id="tally">
+                <h2 id="correct"></h2> 
+                <h2 id="incorrect"></h2>  
+                <h2 id="unanswered"></h2>  
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/javascript/app.js"></script>
+</body>
+
+</html>

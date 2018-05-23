@@ -1,0 +1,53 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+#startBtn {
+    padding: 80px;
+    margin-top: 90px;
+    border: 1px black solid;
+    border-radius: 200px;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: green;
+ }
+
+ #tally {
+     padding: 50px;
+ }
+
+ #correct {
+     color: green;
+ }
+
+ #incorrect {
+     color: red;
+ }
+
+ #clock{
+     padding-bottom: 30px;
+     font-size: 40px;
+ }
+
+#gameDiv {
+    width: 700px;
+    background-color: rgb(194, 158, 58);
+    text-align: center;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    border: 2px solid black;
+}
+
+h1 {
+    padding: 30px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+

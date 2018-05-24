@@ -6,7 +6,7 @@ $(document).ready(function () {
     var unanswered;
     var userinput = [];
     var timer;
-    var seconds = 30;
+    var seconds = 5;
     $("#hidden").hide();
     $("#tally").hide();
     var isChecked = true;
@@ -112,8 +112,8 @@ $(document).ready(function () {
         }
         var ans9 = $("input[type = radio][name=Q9]:checked").val();
         var check9 = $('input[name=Q9][id = right]:radio').val();
-        if (ans2) {
-            if (ans2 == check2) {
+        if (ans9) {
+            if (ans9 == check9) {
                 correct++;
             } else {
                 incorrect++;
@@ -124,8 +124,8 @@ $(document).ready(function () {
 
         var ans10 = $("input[type = radio][name=Q10]:checked").val();
         var check10 = $('input[name=Q10][id = right]:radio').val();
-        if (ans2) {
-            if (ans2 == check2) {
+        if (ans10) {
+            if (ans10 == check10) {
                 correct++;
             } else {
                 incorrect++;

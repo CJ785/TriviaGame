@@ -6,7 +6,7 @@ $(document).ready(function () {
     var unanswered;
     var userinput = [];
     var timer;
-    var seconds = 5;
+    var seconds = 30;
     $("#hidden").hide();
     $("#tally").hide();
     var isChecked = true;
